@@ -3,78 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZoloCoin - Самый умный мемкоин!</title>
+    <title>ZOLOCOIN</title>
     <style>
         body {
-            font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L', sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #131416;
-            color: #0c960c;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        .hugeText {
-            font-size: 3em;
-        }
-        .currency-image {
-            width: 200px;
-            height: 200px;
-            background: #ffffff;
-            margin: 20px auto;
-            border-radius: 10px;
+        .header {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-            color: #131416;
+            justify-content: space-between;
+            padding: 20px;
+            background: black;
         }
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 30px 100px;
-            background: #131416;
-            color: #0c960c;
-            text-decoration: none;
+        .logo {
+            font-size: 24px;
             font-weight: bold;
-            border-radius: 5px;
-            outline: solid;
-            outline-color: #0c960c;
+            color: white;
         }
-        .btn:hover {
-            display: inline-block;
-            margin: 10px;
-            padding: 30px 100px;
-            background: #0c960c;
-            color: #131416;
-            transition: all 0.2s ease;
-        }
-        .socials a {
-            margin: 10px;
+        .nav a {
+            color: white;
             text-decoration: none;
-            color: #0c960c;
-            font-size: 1.2em;
+            margin: 0 15px;
+        }
+        .main {
+            padding: 50px;
+        }
+        .highlight {
+            color: #00ff00;
+        }
+        .button {
+            background-color: transparent;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #00ff00;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>ZoloCoin</h1>
-        <p class="hugeText">Самый умный мемкоин!</p>
-        <img class="currency-image" src="https://memepedia.ru/wp-content/uploads/2021/12/ivan-zolo-2004-tik-tok-2.png">
-        <a href="#" class="btn">Купить ZoloCoin</a>
-        <a href="#" class="btn">Узнать больше</a>
-        
-        <h2>Следите за токеном!</h2>
-        <div class="socials">
-            <a href="#">Telegram</a> | <a href="#">TikTok</a>
+    <div class="header">
+        <div class="logo">ZOLOCOIN</div>
+        <div class="nav">
+            <a href="#">Whitepaper</a>
+            <a href="#">Roadmap</a>
+            <a href="#">Token Price</a>
+            <a href="#">Payments</a>
         </div>
+    </div>
+    <div class="main">
+        <h1>Trust us, we'll figure it out... <span class="highlight">somehow!</span></h1>
+        <p>Ready to dive into the chaos?</p>
+        <p>Forget about seriousness, we accidentally made crypto and we're going to make it fun and utterly useless!</p>
+        <button class="button">Buy token</button>
     </div>
 </body>
 </html>
