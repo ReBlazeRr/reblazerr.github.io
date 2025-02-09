@@ -95,7 +95,7 @@ main {
 }
 
 .buy-button:hover::after {
-  content: "Встать на волну хайпа";
+  content: "Встать на волну хайпа x2";
   display: block;
   margin-top: 10px;
   font-size: 14px;
