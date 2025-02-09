@@ -1,70 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOLOCOIN</title>
-    <style>
-        body {
-            background-color: #0a0a0a;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background: black;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .main {
-            padding: 50px;
-        }
-        .highlight {
-            color: #00ff00;
-        }
-        .button {
-            background-color: transparent;
-            color: #00ff00;
-            border: 2px solid #00ff00;
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: #00ff00;
-            color: black;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOLOCOIN</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">ZOLOCOIN</div>
-        <div class="nav">
-            <a href="#">Whitepaper</a>
-            <a href="#">Roadmap</a>
-            <a href="#">Token Price</a>
-            <a href="#">Payments</a>
-        </div>
+  <!-- Верхняя панель -->
+  <header>
+    <div class="logo">ZOLOCOIN</div>
+    <nav>
+      <ul>
+        <li><a href="#">Бюджеты</a></li>
+        <li><a href="#">Наши Амбиции</a></li>
+        <li><a href="#">Стоимость ZOLO</a></li>
+        <li><a href="#">Выплаты</a></li>
+        <li><a href="#">Ивенты</a></li>
+        <li><a href="#">Войны ZOLO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <div class="zolo-text">ZOLO</div>
+    <img src="zolocoin.png" alt="ZOLOCOIN" class="token-image">
+    <div class="slogan">Просто в ZOLO!</div>
+    <div class="description">
+      Стань богаче Эль Пачо своими силами и встань на тёмную сторону интернета, все в твоих руках!
     </div>
-    <div class="main">
-        <h1>Trust us, we'll figure it out... <span class="highlight">somehow!</span></h1>
-        <p>Ready to dive into the chaos?</p>
-        <p>Forget about seriousness, we accidentally made crypto and we're going to make it fun and utterly useless!</p>
-        <button class="button">Buy token</button>
-    </div>
+    <button class="buy-button">Купить токен</button>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
