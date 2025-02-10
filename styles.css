@@ -13,6 +13,7 @@ body {
 .background-column {
     max-weight: 600px;
     height: 100%;
+    background-color: #1a1a1a;
 }
 
 /* Верхняя панель */
