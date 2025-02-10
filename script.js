@@ -40,10 +40,20 @@ const buyButton = document.querySelector(".buy-button");
 if (buyButton) {
     buyButton.addEventListener("mouseover", () => {
         hoverOnBuyButtonSound.play(); // Проигрываем звук при наведении
+        buyButton.querySelector('span').style.opacity = 0; // Скрываем текущий текст плавно
+        setTimeout(() => {
+            buyButton.querySelector('span').textContent = "Оседлать волну хайпа"; // Меняем текст
+            buyButton.querySelector('span').style.opacity = 1; // Показываем новый текст плавно
+        }, 300); // Время перехода должно совпадать с CSS
     });
 
     buyButton.addEventListener("mouseout", () => {
         hoverOnBuyButtonSound.pause();  // Останавливаем звук при уходе курсора
         hoverOnBuyButtonSound.currentTime = 0; // Сбрасываем звук в начало
+        buyButton.querySelector('span').style.opacity = 0; // Скрываем текущий текст плавно
+        setTimeout(() => {
+            buyButton.querySelector('span').textContent = "Купить токен"; // Меняем текст
+            buyButton.querySelector('span').style.opacity = 1; // Показываем новый текст плавно
+        }, 300); // Время перехода должно совпадать с CSS
     });
 }
