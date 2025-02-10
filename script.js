@@ -18,3 +18,15 @@ cards.forEach(card => {
     }
   });
 });
+
+function hideHeaderOnMobile() {
+    if (window.innerWidth < 768 || /Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+        document.getElementById("header").style.display = "none";
+    }
+}
+
+// Выполнить при загрузке страницы
+window.onload = hideHeaderOnMobile;
+
+// Выполнить при изменении размера окна (если вдруг пользователь меняет размер экрана)
+window.onresize = hideHeaderOnMobile;
