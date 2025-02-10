@@ -30,3 +30,11 @@ window.onload = hideHeaderOnMobile;
 
 // Выполнить при изменении размера окна (если вдруг пользователь меняет размер экрана)
 window.onresize = hideHeaderOnMobile;
+
+// Загружаем звук
+const hoverOnLogoSound = new Audio("./sounds/yanenormis.mp3"); // Укажи путь к файлу
+
+// Находим текст и вешаем обработчик события
+document.querySelector(".logo").addEventListener("mouseover", () => {
+    hoverOnLogoSound.play();
+});
