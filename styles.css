@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  background-color: #141526; /* Темно-синий */
+  background-color: #0A1F44; /* Темно-синий */
   color: #E5E5E5; /* Светлый текст */
 }
 
@@ -15,7 +15,7 @@ body {
     align: "center";
     max-weight: 600px;
     height: 100%;
-    background-color: #141526; /* Темно-синий */
+    background-color: #0A1F44; /* Темно-синий */
     z-index: -1;
 }
 
@@ -69,7 +69,7 @@ main {
 
 .slogan {
   font-size: 24px;
-  margin-top: 350px;
+  margin-top: 320px;
   color: #E5E5E5; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -87,7 +87,7 @@ main {
   font-size: 18px;
   font-weight: bold;
   color: #0A1F44; /* Темно-синий текст */
-  background: linear-gradient(45deg, #999, #E5E5E5); /* Платиновый градиент */
+  background: linear-gradient(45deg, #1E5AFF, #00CFFF); /* Электрик-синий и неоновый голубой */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -95,7 +95,7 @@ main {
 }
 
 .buy-button:hover {
-  background: linear-gradient(45deg, #E5E5E5, #999); /* Инвертированный градиент */
+  background: linear-gradient(45deg, #00CFFF, #1E5AFF); /* Инвертированный градиент */
   transform: scale(1.05);
 }
 
@@ -109,7 +109,7 @@ main {
 /* Секция "Наши Амбиции" */
 .ambitions-section {
   padding: 50px 20px;
-  background-color: #0A1F44; /* Глубокий синий */
+  background-color: #122B56; /* Глубокий синий */
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
@@ -118,6 +118,9 @@ main {
   font-size: 36px;
   margin-bottom: 20px;
   margin-top: 25px;
+  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентное свечение */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .ambitions-section .subtext {
@@ -136,12 +139,13 @@ main {
 }
 
 .card {
-  background-color: #333; /* Тёмно-серый */
+  background-color: #0A1F44; /* Темно-синий */
   padding: 25px;
   border-radius: 10px;
   text-align: left;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #E5E5E5; /* Светлый текст */
 }
 
 .card:hover {
@@ -188,7 +192,7 @@ main {
 /* Секция "Основатели" */
 .founders-section {
   padding: 50px 20px;
-  background-color: #141526; /* Глубокий синий */
+  background-color: #122B56; /* Глубокий синий */
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
@@ -196,6 +200,9 @@ main {
 .founders-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентное свечение */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .founders-section .subtext {
@@ -224,12 +231,13 @@ main {
 }
 
 .founder {
-  background-color: #333; /* Тёмно-серый */
+  background-color: #0A1F44; /* Темно-синий */
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #E5E5E5; /* Светлый текст */
 }
 
 .founder:hover {
@@ -258,7 +266,7 @@ main {
 
 /* Новая секция с глубоким синим фоном */
 .inspiration-section {
-  background-color: #0A1F44; /* Глубокий синий */
+  background-color: #122B56; /* Глубокий синий */
   color: #FFFFFF; /* Белый текст */
   padding: 50px 20px;
   text-align: center;
@@ -270,7 +278,9 @@ main {
 .inspiration-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #00CFFF; /* Градиентное свечение (неоновый голубой) */
+  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентное свечение */
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .inspiration-cards {
@@ -283,7 +293,7 @@ main {
 }
 
 .inspiration-card {
-  background-color: #141526; /* Темно-синий */
+  background-color: #0A1F44; /* Темно-синий */
   padding: 20px;
   border-radius: 10px;
   width: 200px; /* Ограничиваем ширину каждой карточки */
@@ -306,7 +316,6 @@ main {
 .company-name {
   font-size: 16px; /* Размер шрифта для названий компаний */
   color: #FFFFFF; /* Белый текст */
-  margin-bottom: 30px;
 }
 
 .small-text {
@@ -314,10 +323,10 @@ main {
   color: #FFFFFF; /* Белый текст */
   margin-top: 10px;
 }
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
     header {
         display: none;
     }
 }
-
