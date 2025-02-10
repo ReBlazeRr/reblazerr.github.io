@@ -3,12 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-    header {
-        display: none;
-    }
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -251,4 +245,10 @@ main {
 .founder-description {
   font-size: 16px;
   color: #e5e5e5; /* Светлый текст */
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
 }
