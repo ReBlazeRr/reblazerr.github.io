@@ -280,13 +280,15 @@ main {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .inspiration-card {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 200px; /* Ограничиваем ширину каждой карточки */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -297,12 +299,13 @@ main {
 }
 
 .inspiration-card img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 20px;
+  width: 100px; /* Уменьшаем размер изображения */
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-.inspiration-card p {
-  font-size: 16px;
+.small-text {
+  font-size: 14px; /* Мелкий шрифт */
   color: #1a1a1a; /* Тёмный текст */
+  margin-top: 10px;
 }
