@@ -11,6 +11,8 @@ body {
 }
 
 .background-column {
+    display: flex;
+    align: "center"
     max-weight: 600px;
     height: 100%;
     background-color: #1a1a1a;
