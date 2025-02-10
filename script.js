@@ -57,3 +57,32 @@ if (buyButton) {
         }, 300); // Время перехода должно совпадать с CSS
     });
 }
+// Загружаем звуки
+const oselSound = new Audio("./sounds/osel.mp3"); // Укажи путь к файлу
+const stanislavSound = new Audio("./sounds/stanislav.mp3"); // Укажи путь к файлу
+const bombunSound = new Audio("./sounds/bombun.mp3"); // Укажи путь к файлу
+
+const founders = document.querySelectorAll('.founder');
+
+founders.forEach(founder => {
+  founder.addEventListener('mouseover', () => {
+    const founderImg = founder.querySelector('img');
+    if (founderImg.src.includes('Osel.png')) {
+      oselSound.play();
+    } else if (founderImg.src.includes('Stanislav.png')) {
+      stanislavSound.play();
+    } else if (founderImg.src.includes('Bombun.png')) {
+      bombunSound.play();
+    }
+  });
+
+  founder.addEventListener('mouseout', () => {
+    oselSound.pause();
+    oselSound.currentTime = 0;
+    stanislavSound.pause();
+    stanislavSound.currentTime = 0;
+    bombunSound.pause();
+    bombunSound.currentTime = 0;
+  });
+});
+
