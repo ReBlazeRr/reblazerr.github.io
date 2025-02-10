@@ -35,7 +35,7 @@ const hoverOnBuyButtonSound = new Audio("./sounds/yanenormis.mp3"); // Укаж�
 
 hoverOnBuyButtonSound.volume = 4;
 
-const buyButton = document.querySelector(".buy-token");
+const buyButton = document.querySelector(".buy-button");
 
 if (buyButton) {
     buyButton.addEventListener("mouseover", () => {
