@@ -34,6 +34,8 @@ window.onresize = hideHeaderOnMobile;
 // Загружаем звук
 const hoverOnLogoSound = new Audio("./sounds/yanenormis.mp3"); // Укажи путь к файлу
 
+hoverOnLogoSound.volume = 0.3;
+
 const textElement = document.querySelector(".logo");
 
 textElement.addEventListener("mouseover", () => {
