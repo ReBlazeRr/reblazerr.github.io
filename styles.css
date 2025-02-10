@@ -188,7 +188,7 @@ main {
 /* Секция "Основатели" */
 .founders-section {
   padding: 50px 20px;
-  background-color: #122B56; /* Глубокий синий */
+  background-color: #0A1F44; /* Глубокий синий */
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
@@ -258,7 +258,7 @@ main {
 
 /* Новая секция с глубоким синим фоном */
 .inspiration-section {
-  background-color: #122B56; /* Глубокий синий */
+  background-color: #0A1F44; /* Глубокий синий */
   color: #FFFFFF; /* Белый текст */
   padding: 50px 20px;
   text-align: center;
