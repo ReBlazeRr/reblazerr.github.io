@@ -262,9 +262,11 @@ main {
     }
 }
 
+
+
 /* Новая секция с платиновым фоном */
 .inspiration-section {
-  background-color: #e5e5e5; /* Платиновый цвет */
+  background-color: linear-gradient(45deg, #999, #e5e5e5); /* Платиновый градиент */
   color: #1a1a1a; /* Тёмный текст */
   padding: 50px 20px;
   text-align: center;
