@@ -191,8 +191,8 @@ main {
 }
 
 .founders-section .subtext {
-  font-size: 16px;
-    line-height: 1.6;
+  font-size: 20px;
+  line-height: 2;
   color: #999; /* Платиновый акцент */
 }
 
@@ -206,15 +206,13 @@ main {
 
 .founders-cards {
     background: #1a1a1a; /* Тёмный фон */
-    color: #999; /* Белый текст */
     padding: 20px;
-    border-radius: 10px; /* Закруглённые углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Золотая тень */
+    border-radius: 20px; /* Закруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 600px; /* Ограничиваем ширину */
     margin: 20px auto; /* Центрируем карточку */
     font-family: Arial, sans-serif;
-    text-align: center; /* Выравниваем текст по центру */
-    border: 2px solid; /* Золотая рамка */   
+    text-align: center; /* Выравниваем текст по центру */  
 }
 .founder {
   background-color: #333; /* Тёмно-серый */
