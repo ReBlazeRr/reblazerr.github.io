@@ -303,13 +303,7 @@ main {
 
 .inspiration-card img {
   width: 100px; /* Уменьшаем размер изображения */
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.company-name {
-  font-size: 20px; /* Размер шрифта для названий компаний */
-  color: #000; /* Чёрный текст */
+  height: 0px;  margin-bottom: 10px;
 }
 
 .small-text {
@@ -317,3 +311,4 @@ main {
   color: #1a1a1a; /* Тёмный текст */
   margin-top: 10px;
 }
+
