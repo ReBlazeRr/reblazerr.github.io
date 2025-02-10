@@ -33,7 +33,7 @@ window.onresize = hideHeaderOnMobile;
 // Загружаем звук
 const hoverOnBuyButtonSound = new Audio("./sounds/yanenormis.mp3"); // Укажи путь к файлу
 
-hoverOnBuyButtonSound.volume = 4;
+hoverOnBuyButtonSound.volume = 1;
 
 const buyButton = document.querySelector(".buy-button");
 
