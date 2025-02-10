@@ -306,6 +306,7 @@ main {
 .company-name {
   font-size: 16px; /* Размер шрифта для названий компаний */
   color: #FFFFFF; /* Белый текст */
+  margin-bottom: 30px;
 }
 
 .small-text {
