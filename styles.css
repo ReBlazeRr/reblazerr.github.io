@@ -261,3 +261,48 @@ main {
         display: none;
     }
 }
+
+/* Новая секция с платиновым фоном */
+.inspiration-section {
+  background-color: #e5e5e5; /* Платиновый цвет */
+  color: #1a1a1a; /* Тёмный текст */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.inspiration-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.inspiration-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.inspiration-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.inspiration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration-card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.inspiration-card p {
+  font-size: 16px;
+  color: #1a1a1a; /* Тёмный текст */
+}
