@@ -213,10 +213,10 @@ main {
 /* Секция "Основатели" */
 .founders-section {
   padding: 80px 20px;
-  background-color: #122B56;
-  color: #E5E5E5;
+  background-color: #122B56; /* Глубокий синий */
+  color: #E5E5E5; /* Светлый текст */
   text-align: center;
-  border-radius: 20px; /* Закругленные углы секции */
+  border-radius: 20px; /* Закруглённые углы секции */
   border: 3px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентная рамка */
@@ -245,7 +245,7 @@ main {
 }
 
 .founders-cards {
-  background: #0A1F44;
+  background: #0A1F44; /* Темно-синий */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   margin: 0 auto;
@@ -253,20 +253,20 @@ main {
   text-align: center;
   box-sizing: border-box;
   padding: 20px 20px 60px 20px;
-  border-radius: 20px; /* Закругленные углы карточек */
+  border-radius: 20px; /* Закруглённые углы карточек */
   border: 3px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентная рамка */
 }
 
 .founder {
-  background-color: #0A1F44;
+  background-color: #0A1F44; /* Темно-синий */
   padding: 20px;
-  border-radius: 20px; /* Закругленные углы карточки */
+  border-radius: 20px; /* Закруглённые углы карточки */
   width: 300px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #E5E5E5;
+  color: #E5E5E5; /* Светлый текст */
   margin-top: 20px;
   border: 3px solid;
   border-image-slice: 1;
@@ -288,7 +288,7 @@ main {
 .founder-name {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF);
+  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиент */
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 10px;
@@ -296,7 +296,7 @@ main {
 
 .founder-description {
   font-size: 16px;
-  color: #E5E5E5;
+  color: #E5E5E5; /* Светлый текст */
 }
 
 /* Новая секция с глубоким синим фоном */
