@@ -176,3 +176,63 @@ main {
   background-color: #cc0000; /* Красный для FAILED */
   color: #e5e5e5;
 }
+
+/* Секция "Основатели" */
+.founders-section {
+  padding: 50px 20px;
+  background-color: #2a2a2a; /* Тёмный фон */
+  color: #e5e5e5; /* Светлый текст */
+  text-align: center;
+}
+
+.founders-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.founders-section .subtext {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #999; /* Платиновый акцент */
+}
+
+/* Сетка основателей */
+.founders-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder {
+  background-color: #333; /* Тёмно-серый */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.founder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.founder img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.founder-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #999; /* Платиновый акцент */
+  margin-bottom: 10px;
+}
+
+.founder-description {
+  font-size: 16px;
+  color: #e5e5e5; /* Светлый текст */
+}
