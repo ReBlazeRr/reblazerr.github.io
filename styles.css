@@ -256,10 +256,10 @@ main {
   color: #E5E5E5; /* Светлый текст */
 }
 
-/* Новая секция с платиновым фоном */
+/* Новая секция с глубоким синим фоном */
 .inspiration-section {
-  background: linear-gradient(45deg, #999, #E5E5E5); /* Платиновый градиент */
-  color: #0A1F44; /* Темно-синий текст */
+  background-color: #122B56; /* Глубокий синий */
+  color: #FFFFFF; /* Белый текст */
   padding: 50px 20px;
   text-align: center;
   margin: 50px auto; /* Отступы сверху и снизу, центрируем по горизонтали */
@@ -270,6 +270,7 @@ main {
 .inspiration-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #00CFFF; /* Градиентное свечение (неоновый голубой) */
 }
 
 .inspiration-cards {
@@ -282,12 +283,13 @@ main {
 }
 
 .inspiration-card {
-  background-color: #fff;
+  background-color: #0A1F44; /* Темно-синий */
   padding: 20px;
   border-radius: 10px;
   width: 200px; /* Ограничиваем ширину каждой карточки */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  color: #FFFFFF; /* Белый текст */
 }
 
 .inspiration-card:hover {
@@ -303,15 +305,14 @@ main {
 
 .company-name {
   font-size: 16px; /* Размер шрифта для названий компаний */
-  color: #000; /* Чёрный текст */
+  color: #FFFFFF; /* Белый текст */
 }
 
 .small-text {
   font-size: 14px; /* Мелкий шрифт */
-  color: #0A1F44; /* Темно-синий текст */
+  color: #FFFFFF; /* Белый текст */
   margin-top: 10px;
 }
-
 /* Адаптивные стили */
 @media (max-width: 768px) {
     header {
