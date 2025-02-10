@@ -63,7 +63,7 @@ const stanislavSound = new Audio("./sounds/stanislav.mp3"); // Укажи пут
 const bombunSound = new Audio("./sounds/bombun.mp3"); // Укажи путь к файлу
 
 // Устанавливаем громкость (0.0 - 1.0)
-oselSound.volume = 0.3;
+oselSound.volume = 0.2;
 stanislavSound.volume = 0.3;
 bombunSound.volume = 0.3;
 
