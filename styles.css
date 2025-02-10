@@ -307,6 +307,11 @@ main {
   margin-bottom: 10px;
 }
 
+.company-name {
+  font-size: 16px; /* Размер шрифта для названий компаний */
+  color: #000; /* Чёрный текст */
+}
+
 .small-text {
   font-size: 14px; /* Мелкий шрифт */
   color: #1a1a1a; /* Тёмный текст */
