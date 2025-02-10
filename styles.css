@@ -10,6 +10,11 @@ body {
   color: #e5e5e5; /* Светлый текст */
 }
 
+.background-column {
+    max-weight: 600px;
+    height: 100%;
+}
+
 /* Верхняя панель */
 header {
   display: flex;
