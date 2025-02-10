@@ -40,12 +40,10 @@ const buyButton = document.querySelector(".buy-button");
 if (buyButton) {
     buyButton.addEventListener("mouseover", () => {
         hoverOnBuyButtonSound.play(); // Проигрываем звук при наведении
-        buyButton.textContent = "Оседлать волну хайпа"; // Замена текста
     });
 
     buyButton.addEventListener("mouseout", () => {
         hoverOnBuyButtonSound.pause();  // Останавливаем звук при уходе курсора
         hoverOnBuyButtonSound.currentTime = 0; // Сбрасываем звук в начало
-        buyButton.textContent = "Купить токен"; // Возврат текста
     });
 }
