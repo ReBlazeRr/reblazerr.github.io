@@ -249,17 +249,24 @@ main {
     text-align: center; /* Выравниваем текст по центру */
     box-sizing: border-box;
     padding: 20px 20px 60px 20px; /* Добавляем отступ снизу */
+    border-radius: 20px; /* Закругленные углы */
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентная рамка */
 }
 
 .founder {
   background-color: #0A1F44; /* Темно-синий */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px; /* Закругленные углы карточек */
   width: 300px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #E5E5E5; /* Светлый текст */
   margin-top: 20px; /* Добавляем отступ сверху */
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентная рамка карточек */
 }
 
 .founder:hover {
@@ -287,7 +294,6 @@ main {
   font-size: 16px;
   color: #E5E5E5; /* Светлый текст */
 }
-
 
 /* Новая секция с глубоким синим фоном */
 .inspiration-section {
