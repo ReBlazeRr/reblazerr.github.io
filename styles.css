@@ -6,8 +6,8 @@ html {
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  background-color: #1a1a1a; /* Тёмный фон */
-  color: #e5e5e5; /* Светлый текст */
+  background-color: #0A1F44; /* Темно-синий */
+  color: #E5E5E5; /* Светлый текст */
 }
 
 .background-column {
@@ -15,7 +15,7 @@ body {
     align: "center";
     max-weight: 600px;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: #0A1F44; /* Темно-синий */
     z-index: -1;
 }
 
@@ -30,7 +30,7 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #e5e5e5; /* Светлый текст */
+  color: #E5E5E5; /* Светлый текст */
   margin-left: 30%;
 }
 
@@ -44,15 +44,14 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #e5e5e5; /* Светлый текст */
+  color: #E5E5E5; /* Светлый текст */
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #999; /* Платиновый акцент */
+  color: #1E5AFF; /* Электрик-синий */
 }
-
 /* Основной контент */
 main {
   text-align: center;
@@ -70,15 +69,15 @@ main {
 
 .slogan {
   font-size: 24px;
-  margin-top: 340px;
-  color: #e5e5e5; /* Светлый текст */
+  margin-top: 320px;
+  color: #E5E5E5; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .description {
   font-size: 18px;
   margin-top: 10px;
-  color: #e5e5e5; /* Светлый текст */
+  color: #E5E5E5; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -87,8 +86,8 @@ main {
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #1a1a1a; /* Тёмный текст */
-  background: linear-gradient(45deg, #999, #e5e5e5); /* Платиновый градиент */
+  color: #0A1F44; /* Темно-синий текст */
+  background: linear-gradient(45deg, #999, #E5E5E5); /* Платиновый градиент */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -96,7 +95,7 @@ main {
 }
 
 .buy-button:hover {
-  background: linear-gradient(45deg, #e5e5e5, #999); /* Инвертированный градиент */
+  background: linear-gradient(45deg, #E5E5E5, #999); /* Инвертированный градиент */
   transform: scale(1.05);
 }
 
@@ -105,13 +104,13 @@ main {
   display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #1a1a1a; /* Тёмный текст */
+  color: #0A1F44; /* Темно-синий текст */
 }
 /* Секция "Наши Амбиции" */
 .ambitions-section {
   padding: 50px 20px;
-  background-color: #2a2a2a; /* Тёмный фон */
-  color: #e5e5e5; /* Светлый текст */
+  background-color: #122B56; /* Глубокий синий */
+  color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
 
@@ -124,7 +123,7 @@ main {
 .ambitions-section .subtext {
   font-size: 18px;
   margin-bottom: 40px;
-  color: #999; /* Платиновый акцент */
+  color: #8A8D91; /* Холодный серый */
 }
 
 /* Карточки планов */
@@ -153,14 +152,14 @@ main {
 .card h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #999; /* Платиновый акцент */
+  color: #1E5AFF; /* Электрик-синий */
 }
 
 .card p {
   font-size: 16px;
   margin-bottom: 10px;
+  color: #C0C0C0; /* Серебристый/Платиновый */
 }
-
 /* Статусы */
 .status {
   position: absolute;
@@ -173,24 +172,24 @@ main {
 
 .in-progress .status {
   background-color: #ffcc00; /* Жёлтый для IN PROGRESS */
-  color: #1a1a1a;
+  color: #0A1F44; /* Темно-синий */
 }
 
 .done .status {
   background-color: #00cc66; /* Зелёный для DONE */
-  color: #1a1a1a;
+  color: #0A1F44; /* Темно-синий */
 }
 
 .failed .status {
   background-color: #cc0000; /* Красный для FAILED */
-  color: #e5e5e5;
+  color: #E5E5E5; /* Светлый текст */
 }
 
 /* Секция "Основатели" */
 .founders-section {
   padding: 50px 20px;
-  background-color: #2a2a2a; /* Тёмный фон */
-  color: #e5e5e5; /* Светлый текст */
+  background-color: #122B56; /* Глубокий синий */
+  color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
 
@@ -202,7 +201,7 @@ main {
 .founders-section .subtext {
   font-size: 20px;
   line-height: 2;
-  color: #999; /* Платиновый акцент */
+  color: #8A8D91; /* Холодный серый */
 }
 
 /* Сетка основателей */
@@ -214,15 +213,16 @@ main {
 }
 
 .founders-cards {
-    background: #1a1a1a; /* Тёмный фон */
+    background: #0A1F44; /* Темно-синий */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     max-width: 800px; /* Ограничиваем ширину */
     margin: 0 auto; /* Центрируем карточку */
     font-family: Verdana, sans-serif;
-    text-align: center; /* Выравниваем текст по центру */  
+    text-align: center; /* Выравниваем текст по центру */
     box-sizing: border-box;
     padding: 20px;
 }
+
 .founder {
   background-color: #333; /* Тёмно-серый */
   padding: 20px;
@@ -247,25 +247,19 @@ main {
 .founder-name {
   font-size: 24px;
   font-weight: bold;
-  color: #999; /* Платиновый акцент */
+  color: #1E5AFF; /* Электрик-синий */
   margin-bottom: 10px;
 }
 
 .founder-description {
   font-size: 16px;
-  color: #e5e5e5; /* Светлый текст */
-}
-
-@media (max-width: 768px) {
-    header {
-        display: none;
-    }
+  color: #E5E5E5; /* Светлый текст */
 }
 
 /* Новая секция с платиновым фоном */
 .inspiration-section {
-  background: linear-gradient(45deg, #999, #e5e5e5); /* Платиновый градиент */
-  color: #1a1a1a; /* Тёмный текст */
+  background: linear-gradient(45deg, #999, #E5E5E5); /* Платиновый градиент */
+  color: #0A1F44; /* Темно-синий текст */
   padding: 50px 20px;
   text-align: center;
   margin: 50px auto; /* Отступы сверху и снизу, центрируем по горизонтали */
@@ -303,12 +297,25 @@ main {
 
 .inspiration-card img {
   width: 100px; /* Уменьшаем размер изображения */
-  height: 0px;  margin-bottom: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 16px; /* Размер шрифта для названий компаний */
+  color: #000; /* Чёрный текст */
 }
 
 .small-text {
   font-size: 14px; /* Мелкий шрифт */
-  color: #1a1a1a; /* Тёмный текст */
+  color: #0A1F44; /* Темно-синий текст */
   margin-top: 10px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
 }
 
