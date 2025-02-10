@@ -1,4 +1,3 @@
-// Пример изменения статуса плана
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
@@ -32,17 +31,19 @@ window.onload = hideHeaderOnMobile;
 window.onresize = hideHeaderOnMobile;
 
 // Загружаем звук
-const hoverOnLogoSound = new Audio("./sounds/yanenormis.mp3"); // Укажи путь к файлу
+const hoverOnBuyButtonSound = new Audio("./sounds/yanenormis.mp3"); // Укажи путь к файлу
 
-hoverOnLogoSound.volume = 0;
+hoverOnBuyButtonSound.volume = 4;
 
-const textElement = document.querySelector(".logo");
+const buyButton = document.querySelector(".buy-token");
 
-textElement.addEventListener("mouseover", () => {
-    hoverOnLogoSound.play(); // Проигрываем звук при наведении
-});
+if (buyButton) {
+    buyButton.addEventListener("mouseover", () => {
+        hoverOnBuyButtonSound.play(); // Проигрываем звук при наведении
+    });
 
-textElement.addEventListener("mouseout", () => {
-    hoverOnLogoSound.pause();  // Останавливаем звук при уходе курсора
-    hoverOnLogoSound.currentTime = 0; // Сбрасываем звук в начало
-});
+    buyButton.addEventListener("mouseout", () => {
+        hoverOnBuyButtonSound.pause();  // Останавливаем звук при уходе курсора
+        hoverOnBuyButtonSound.currentTime = 0; // Сбрасываем звук в начало
+    });
+}
