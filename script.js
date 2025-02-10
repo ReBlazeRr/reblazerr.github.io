@@ -62,6 +62,11 @@ const oselSound = new Audio("./sounds/osel.mp3"); // Укажи путь к фа
 const stanislavSound = new Audio("./sounds/stanislav.mp3"); // Укажи путь к файлу
 const bombunSound = new Audio("./sounds/bombun.mp3"); // Укажи путь к файлу
 
+// Устанавливаем громкость (0.0 - 1.0)
+oselSound.volume = 0.3;
+stanislavSound.volume = 0.3;
+bombunSound.volume = 0.3;
+
 const founders = document.querySelectorAll('.founder');
 
 founders.forEach(founder => {
@@ -85,4 +90,5 @@ founders.forEach(founder => {
     bombunSound.currentTime = 0;
   });
 });
+
 
