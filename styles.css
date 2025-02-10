@@ -97,7 +97,7 @@ main {
 }
 
 .buy-button::before {
-  content: "Оседлать волну хайпа";
+  content: attr(data-hover-text);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,6 +132,7 @@ main {
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
+
 
 .ambitions-section h2 {
   font-size: 36px;
