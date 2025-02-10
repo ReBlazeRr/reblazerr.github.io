@@ -91,7 +91,20 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buy-button::before {
+  content: "Оседлать волну хайпа";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0A1F44;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .buy-button:hover {
@@ -99,13 +112,19 @@ main {
   transform: scale(1.05);
 }
 
-.buy-button:hover::after {
-  content: "Оседлать волну хайпа";
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #0A1F44; /* Темно-синий текст */
+.buy-button:hover::before {
+  opacity: 1;
 }
+
+.buy-button span {
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.buy-button:hover span {
+  opacity: 0;
+}
+
 /* Секция "Наши Амбиции" */
 .ambitions-section {
   padding: 50px 20px;
