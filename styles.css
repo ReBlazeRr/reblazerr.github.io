@@ -211,7 +211,7 @@ main {
 
 /* Секция "Основатели" */
 .founders-section {
-  padding: 50px 20px;
+  padding: 80px 20px; /* Увеличиваем отступ сверху и снизу */
   background-color: #122B56; /* Глубокий синий */
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
@@ -219,7 +219,7 @@ main {
 
 .founders-section h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Увеличиваем отступ снизу */
   background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентное свечение */
   -webkit-background-clip: text;
   color: transparent;
@@ -247,7 +247,7 @@ main {
     font-family: Verdana, sans-serif;
     text-align: center; /* Выравниваем текст по центру */
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 20px 60px 20px; /* Добавляем отступ снизу */
 }
 
 .founder {
@@ -258,6 +258,7 @@ main {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #E5E5E5; /* Светлый текст */
+  margin-top: 20px; /* Добавляем отступ сверху */
 }
 
 .founder:hover {
@@ -283,6 +284,7 @@ main {
   font-size: 16px;
   color: #E5E5E5; /* Светлый текст */
 }
+
 
 /* Новая секция с глубоким синим фоном */
 .inspiration-section {
