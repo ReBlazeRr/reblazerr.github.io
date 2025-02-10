@@ -216,12 +216,12 @@ main {
 .founders-cards {
     background: #1a1a1a; /* Тёмный фон */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 100%; /* Ограничиваем ширину */
+    max-width: 800px; /* Ограничиваем ширину */
     margin: 0 auto; /* Центрируем карточку */
     font-family: Verdana, sans-serif;
-    align: left;
     text-align: center; /* Выравниваем текст по центру */  
     box-sizing: border-box;
+    padding: 20px;
 }
 .founder {
   background-color: #333; /* Тёмно-серый */
