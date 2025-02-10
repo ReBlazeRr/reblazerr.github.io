@@ -273,6 +273,9 @@ main {
   margin: 50px auto; /* Отступы сверху и снизу, центрируем по горизонтали */
   max-width: 800px; /* Ограничение ширины */
   border-radius: 10px; /* Закругленные углы */
+  border: 3px solid; /* Добавляем обводку */
+  border-image-slice: 1; 
+  border-image-source: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиентная обводка */
 }
 
 .inspiration-section h2 {
