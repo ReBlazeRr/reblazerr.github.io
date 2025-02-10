@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
-  background-color: #000917; /* Темно-синий */
+  background-color: #141526; /* Темно-синий */
   color: #E5E5E5; /* Светлый текст */
 }
 
@@ -15,7 +15,7 @@ body {
     align: "center";
     max-weight: 600px;
     height: 100%;
-    background-color: #000917; /* Темно-синий */
+    background-color: #141526; /* Темно-синий */
     z-index: -1;
 }
 
@@ -188,7 +188,7 @@ main {
 /* Секция "Основатели" */
 .founders-section {
   padding: 50px 20px;
-  background-color: #000917; /* Глубокий синий */
+  background-color: #141526; /* Глубокий синий */
   color: #E5E5E5; /* Светлый текст */
   text-align: center;
 }
@@ -283,7 +283,7 @@ main {
 }
 
 .inspiration-card {
-  background-color: #000917; /* Темно-синий */
+  background-color: #141526; /* Темно-синий */
   padding: 20px;
   border-radius: 10px;
   width: 200px; /* Ограничиваем ширину каждой карточки */
