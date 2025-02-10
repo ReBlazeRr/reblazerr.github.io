@@ -52,25 +52,28 @@ main {
 }
 
 .zolo-text {
-  font-size: 100px;
+  font-size: 130px;
   font-weight: bold;
   color: #999; /* Платиновый акцент */
-  position: relative;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .token-image {
-  width: 150px;
+  width: 400px;
   position: absolute;
-  top: 50%;
+  top: 250px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: -1;
 }
 
 .slogan {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 100px;
   color: #e5e5e5; /* Светлый текст */
 }
 
