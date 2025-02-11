@@ -1,7 +1,9 @@
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
-  card.addEventListener('click', () => {
+  card.querySelector('.status').textContent = 'IN PROGRESS';
+  
+  card.removeEventListener('click', () => {
     if (card.classList.contains('in-progress')) {
       card.classList.remove('in-progress');
       card.classList.add('done');
