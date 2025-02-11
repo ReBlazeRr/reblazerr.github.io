@@ -32,7 +32,7 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   width: 10rem;
   height: 3.5rem;
   margin-left: auto;
@@ -50,7 +50,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -77,14 +77,14 @@ main {
 .slogan {
   font-size: 24px;
   margin-top: 400px; /* Увеличиваем отступ сверху для текста */
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .description {
   font-size: 18px;
   margin-top: 20px; /* Увеличиваем отступ сверху */
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -173,7 +173,7 @@ main {
   text-align: left;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
 }
 
 .card:hover {
@@ -214,14 +214,14 @@ main {
 
 .failed .status {
   background-color: #cc0000; /* Красный для FAILED */
-  color: #E5E5E5; /* Светлый текст */
+  color: #0A1F44; /* Темно-синий */
 }
 
 /* Секция "Основатели" */
 .founders-section {
   padding: 80px 20px; /* Увеличиваем отступ сверху и снизу */
   background-color: #122B56; /* Глубокий синий */
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   text-align: center;
   border-radius: 20px; /* Закругляем углы */
   position: relative;
@@ -305,7 +305,7 @@ main {
   width: 300px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
   margin-top: 20px; /* Добавляем отступ сверху */
   position: relative;
   overflow: hidden;
@@ -351,7 +351,7 @@ main {
 
 .founder-description {
   font-size: 16px;
-  color: #E5E5E5; /* Светлый текст */
+  color: #FFFFFF; /* Светлый текст */
 }
 
 /* Новая секция с глубоким синим фоном */
