@@ -173,7 +173,7 @@ main {
   text-align: left;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: #FFFFFF; /* Светлый текст */
+  color: #FFFFFF; /* Абсолютно белый текст */
 }
 
 .card:hover {
@@ -190,7 +190,7 @@ main {
 .card p {
   font-size: 16px;
   margin-bottom: 10px;
-  color: #C0C0C0; /* Серебристый/Платиновый */
+  color: #FFFFFF; /* Абсолютно белый текст */
 }
 /* Статусы */
 .status {
