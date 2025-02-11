@@ -115,7 +115,7 @@ main {
 }
 
 .buy-button:hover {
-  background: linear-gradient(135deg, #a6caff, #b8e0f4);
+  background: linear-gradient(45deg, #999, #e5e5e5);
   color: white;
   transform: scale(1.05);
 }
