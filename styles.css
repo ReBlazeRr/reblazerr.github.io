@@ -12,8 +12,10 @@ body {
 
 .background-column {
     display: flex;
-    align: "center";
-    max-weight: 600px;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
     height: 100%;
     background-color: #0A1F44; /* Темно-синий */
     z-index: -1;
@@ -31,8 +33,12 @@ header {
   font-size: 24px;
   font-weight: bold;
   color: #E5E5E5; /* Светлый текст */
-  margin-left: 30%;
+  width: 10rem;
+  height: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 nav ul {
   list-style: none;
@@ -61,11 +67,11 @@ main {
 
 .token-image {
   width: 400px;
-  position: absolute;
+  position: relative;
   top: 270px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -2;
+  z-index: -1;
 }
 
 .slogan {
@@ -110,7 +116,8 @@ main {
 }
 
 .buy-button:hover {
-  background: linear-gradient(45deg, #00CFFF, #1E5AFF); /* Инвертированный градиент */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
   transform: scale(1.05);
 }
 
