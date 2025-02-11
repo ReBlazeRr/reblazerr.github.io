@@ -76,7 +76,7 @@ main {
 
 .slogan {
   font-size: 24px;
-  margin-top: 350px; /* Увеличиваем отступ сверху, если требуется */
+  margin-top: 400px; /* Увеличиваем отступ сверху для текста */
   color: #E5E5E5; /* Светлый текст */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
