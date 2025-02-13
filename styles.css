@@ -438,7 +438,7 @@ main {
   background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF);
   padding: 40px 20px;
   box-sizing: border-box;
-  margin-top: 60px; /* Отступ сверху для отделения от предыдущей секции */
+  margin-top: 60px; /* Отступ сверху от предыдущей секции */
 }
 
 .footer-container {
@@ -461,4 +461,24 @@ main {
   font-size: 18px;
   line-height: 1.6;
   text-align: left;
+}
+
+/* Стили для гиперссылок (по желанию можно добавить hover-эффект) */
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #000000;
+}
+
+.disclaimer {
+  font-size: 0.8rem; /* Маленький шрифт */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
 }
