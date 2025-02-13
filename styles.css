@@ -435,7 +435,7 @@ main {
 /* Наши контакты */
 .contact-footer {
   width: 100%;
-  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF);
+  background: linear-gradient(45deg, #999, #e5e5e5);
   padding: 40px 20px;
   box-sizing: border-box;
   margin-top: 60px; /* Отступ сверху от предыдущей секции */
