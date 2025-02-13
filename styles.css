@@ -449,7 +449,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-logo {
@@ -465,14 +465,14 @@ main {
 
 /* Стили для гиперссылок (по желанию можно добавить hover-эффект) */
 .footer-contact a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .footer-contact a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .disclaimer {
@@ -480,5 +480,5 @@ main {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  color: #ffffff;
+  color: #000000;
 }
