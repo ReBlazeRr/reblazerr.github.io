@@ -110,3 +110,12 @@ window.addEventListener('scroll', function() {
         nav.style.marginRight = '400px'; /* Возвращаем исходный отступ справа */
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let header = document.getElementById("header");
+    header.style.position = "fixed";
+    header.style.top = "0";
+    header.style.left = "0";
+    header.style.width = "100%";
+    header.style.zIndex = "1000";
+});
