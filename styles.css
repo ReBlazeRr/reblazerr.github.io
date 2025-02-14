@@ -39,6 +39,7 @@ header {
 header nav ul li {
     background: #081937; /* Темно-синий фон */
     border-radius: 20px; /* Закругленные углы */
+    padding: 10px 10px;
     position: relative;
     overflow: hidden;
     transition: transform 0.1s, box-shadow 0.1s;
