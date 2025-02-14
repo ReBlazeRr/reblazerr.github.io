@@ -105,7 +105,7 @@ window.addEventListener('scroll', function() {
         nav.style.marginRight = '150px'; /* Увеличиваем отступ справа */
     } else {
         logo.style.marginLeft = '800px'; /* Возвращаем исходный отступ слева */
-        nav.style.marginRight = '800px'; /* Возвращаем исходный отступ справа */
+        nav.style.marginRight = '700px'; /* Возвращаем исходный отступ справа */
     }
 });
 
