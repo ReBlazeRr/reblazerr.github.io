@@ -466,6 +466,9 @@ main {
 .footer-title {
   font-size: 28px;
   font-weight: bold;
+  background: linear-gradient(to right, #0077FF, #00AAFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-right {
