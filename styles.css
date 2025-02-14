@@ -32,7 +32,11 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #FFFFFF; /* Светлый текст */
+  background: linear-gradient(45deg, #c0c0c0, #f0f0f0, #c0c0c0);
+  background-size: 300% 300%;
+  animation: gradientFlow 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: 10rem;
   height: 3.5rem;
   margin-left: auto;
