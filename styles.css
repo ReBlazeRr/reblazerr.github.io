@@ -434,18 +434,16 @@ main {
 
 /* Наши контакты */
 .contact-footer {
-  width: 100%;
-  background-color: #122B56; /* Глубокий синий */
-  padding: 40px 20px;
-  box-sizing: border-box;
-  margin-top: 60px; /* Отступ сверху от предыдущей секции */
+  background-color: #122B56;
+  color: white;
+  padding: 30px 10%;
 }
+
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 10%; /* отступы слева и справа для центрирования */
 }
 
 .footer-left {
@@ -454,7 +452,7 @@ main {
 }
 
 .footer-logo {
-  width: 80px; 
+  width: 80px; /* Эмблема остается маленькой */
   height: auto;
   margin-right: 15px;
 }
@@ -466,27 +464,12 @@ main {
 .footer-title {
   font-size: 28px;
   font-weight: bold;
-  background: linear-gradient(45deg, #999, #e5e5e5);
-  background-size: 200% auto;
-  animation: gradientFlow 3s linear infinite;
+  background: linear-gradient(45deg, #c0c0c0, #f0f0f0, #c0c0c0);
+  background-size: 300% 300%;
+  animation: gradientFlow 3s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.footer-info p {
-  margin: 4px 0;
+  margin: 0;
 }
 
 .footer-right {
@@ -494,7 +477,7 @@ main {
 }
 
 .footer-links a {
-  display: block; /* ссылки в столбец */
+  display: block;  /* Располагаем гиперссылки столбцом */
   font-weight: bold;
   background: linear-gradient(45deg, #00D4FF, #0077FF);
   -webkit-background-clip: text;
@@ -514,4 +497,28 @@ main {
   margin-top: 10px;
 }
 
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
+/* Responsive (для телефонов) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    margin-bottom: 15px;
+  }
+}
