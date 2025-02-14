@@ -443,24 +443,16 @@ main {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  text-align: center;
 }
 
 .footer-logo {
-  width: 80px;
-  height: auto;
-  margin-right: 15px;
-}
-
-.footer-info {
-  text-align: left;
+  filter: grayscale(100%) brightness(150%);
+  background: linear-gradient(45deg, #999, #e5e5e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-title {
@@ -471,27 +463,22 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.footer-right {
-  text-align: right;
+.footer-contact {
+  margin-top: 10px;
 }
 
-.footer-right a {
-  font-weight: bold;
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  display: block; /* Гиперссылки в столбец */
+  color: #00AAFF;
   text-decoration: none;
-  background: linear-gradient(45deg, #00D4FF, #0077FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: color 0.3s ease-in-out;
-}
-
-.footer-right a:hover {
-  -webkit-text-fill-color: white;
-}
-
-.disclaimer {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 12px;
   font-weight: bold;
-  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: white;
 }
