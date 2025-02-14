@@ -470,6 +470,7 @@ main {
   background: linear-gradient(45deg, #999, #e5e5e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: -webkit-text-fill-color 0.3s ease;
 }
 
 .footer-info p {
