@@ -71,7 +71,7 @@ nav ul {
   display: flex;
   gap: 20px;
   padding: 0;
-  margin-right: 800px; /* Начальный отступ справа */
+  margin-right: 700px; /* Начальный отступ справа */
   transition: margin-right 0.1s ease; /* Плавное изменение отступа */
 }
 
