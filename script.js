@@ -96,26 +96,17 @@ founders.forEach(founder => {
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     const logo = document.querySelector('.logo');
-    const nav = document.querySelector('nav');
+    const nav = document.querySelector('nav ul');
     const scrollY = window.scrollY;
 
     // Увеличиваем отступы при прокрутке
     if (scrollY > 50) {
-        header.style.padding = '10px 20px'; /* Уменьшаем отступы в header */
-        logo.style.marginLeft = '50px'; /* Увеличиваем отступ слева */
-        nav.style.marginRight = '50px'; /* Увеличиваем отступ справа */
+        logo.style.marginLeft = '350px'; /* Увеличиваем отступ слева */
+        nav.style.marginRight = '150px'; /* Увеличиваем отступ справа */
     } else {
-        header.style.padding = '20px'; /* Возвращаем исходные отступы */
-        logo.style.marginLeft = '500px'; /* Возвращаем исходный отступ слева */
-        nav.style.marginRight = '400px'; /* Возвращаем исходный отступ справа */
+        logo.style.marginLeft = '800px'; /* Возвращаем исходный отступ слева */
+        nav.style.marginRight = '800px'; /* Возвращаем исходный отступ справа */
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let header = document.getElementById("header");
-    header.style.position = "fixed";
-    header.style.top = "0";
-    header.style.left = "0";
-    header.style.width = "100%";
-    header.style.zIndex = "1000";
-});
+

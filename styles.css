@@ -23,10 +23,16 @@ body {
 
 /* Верхняя панель */
 header {
-  position: flex;
+  display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: padding 0.1s ease; /* Плавное изменение отступов */
 }
 
 .logo {
@@ -39,8 +45,9 @@ header {
   -webkit-text-fill-color: transparent;
   width: 10rem;
   height: 3.5rem;
-  margin-left: 500px;
-  transition: margin-left 0.3s ease;
+  margin-left: 800px;
+  margin-top: 20px;
+  transition: margin-left 0.1s ease;
 }
 
 nav ul {
@@ -48,8 +55,8 @@ nav ul {
   display: flex;
   gap: 20px;
   padding: 0;
-  margin-right: 400px; /* Начальный отступ справа */
-  transition: margin-right 0.3s ease; /* Плавное изменение отступа */
+  margin-right: 800px; /* Начальный отступ справа */
+  transition: margin-right 0.1s ease; /* Плавное изменение отступа */
 }
 
 nav ul li a {
