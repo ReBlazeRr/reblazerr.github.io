@@ -102,7 +102,7 @@ window.addEventListener('scroll', function() {
     // Увеличиваем отступы при прокрутке
     if (scrollY > 50) {
         logo.style.marginLeft = '350px'; /* Увеличиваем отступ слева */
-        nav.style.marginRight = '150px'; /* Увеличиваем отступ справа */
+        nav.style.marginRight = '50px'; /* Увеличиваем отступ справа */
     } else {
         logo.style.marginLeft = '800px'; /* Возвращаем исходный отступ слева */
         nav.style.marginRight = '700px'; /* Возвращаем исходный отступ справа */
