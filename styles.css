@@ -442,43 +442,53 @@ main {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  color: #ffffff;
 }
 
 .footer-logo {
-  width: 100px;
+  width: 80px;
   height: auto;
+  margin-right: 15px;
 }
 
-.footer-contact {
-  font-size: 18px;
-  line-height: 1.6;
+.footer-info {
   text-align: left;
 }
 
-/* Стили для гиперссылок (по желанию можно добавить hover-эффект) */
-.footer-contact a {
-  color: #1E5AFF;
-  text-decoration: none;
+.footer-title {
+  font-size: 28px;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-.footer-contact a:hover {
-  color: #000000;
+.footer-right {
+  text-align: right;
+}
+
+.footer-right a {
+  font-weight: bold;
+  text-decoration: none;
+  background: linear-gradient(45deg, #00D4FF, #0077FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-right a:hover {
+  -webkit-text-fill-color: white;
 }
 
 .disclaimer {
-  font-size: 0.8rem; /* Маленький шрифт */
-  font-weight: bold;
-  text-align: center;
   margin-top: 20px;
-  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.8;
 }
