@@ -443,9 +443,9 @@ main {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Центрирование по горизонтали */
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
 }
 
 .footer-logo {
@@ -464,15 +464,11 @@ main {
 }
 
 .footer-contact {
-  margin-top: 10px;
-}
-
-.footer-contact p {
-  margin: 5px 0;
+  text-align: left;
 }
 
 .footer-contact a {
-  display: block; /* Гиперссылки в столбец */
+  display: block;
   color: #00AAFF;
   text-decoration: none;
   font-weight: bold;
@@ -482,3 +478,11 @@ main {
 .footer-contact a:hover {
   color: white;
 }
+
+.disclaimer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
