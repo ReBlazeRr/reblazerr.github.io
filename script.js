@@ -96,16 +96,16 @@ founders.forEach(founder => {
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     const logo = document.querySelector('.logo');
-    const nav = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
     const scrollY = window.scrollY;
 
     // Увеличиваем отступы при прокрутке
     if (scrollY > 50) {
-        logo.style.marginLeft = '350px'; /* Увеличиваем отступ слева */
-        nav.style.marginRight = '50px'; /* Увеличиваем отступ справа */
+        logo.style.marginLeft = '10%'; /* Увеличиваем отступ слева */
+        nav.style.marginRight = '3%'; /* Увеличиваем отступ справа */
     } else {
-        logo.style.marginLeft = '800px'; /* Возвращаем исходный отступ слева */
-        nav.style.marginRight = '700px'; /* Возвращаем исходный отступ справа */
+        logo.style.marginLeft = '25%'; /* Возвращаем исходный отступ слева */
+        nav.style.marginRight = '20%'; /* Возвращаем исходный отступ справа */
     }
 });
 

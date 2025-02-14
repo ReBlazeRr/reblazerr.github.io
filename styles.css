@@ -40,6 +40,7 @@ header nav ul li {
     background: #081937; /* Темно-синий фон */
     border-radius: 20px; /* Закругленные углы */
     padding: 10px;
+    gap: 10px;
     position: relative;
     overflow: hidden;
     transition: transform 0.1s, box-shadow 0.1s;   
@@ -61,17 +62,21 @@ header nav ul li:hover {
   -webkit-text-fill-color: transparent;
   width: 10rem;
   height: 3.5rem;
-  margin-left: 800px;
+  margin-left: 25%;
+  margin-right: 20px;
   margin-top: 20px;
   transition: margin-left 0.1s ease;
+}
+
+header nav {
+  margin-right: 20%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
   padding: 0;
-  margin-right: 700px; /* Начальный отступ справа */
   transition: margin-right 0.1s ease; /* Плавное изменение отступа */
 }
 
@@ -80,6 +85,7 @@ nav ul li a {
   color: #FFFFFF; /* Светлый текст */
   font-weight: bold;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 nav ul li a:hover {
