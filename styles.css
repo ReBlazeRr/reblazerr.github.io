@@ -23,7 +23,7 @@ body {
 
 /* Верхняя панель */
 header {
-  display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
