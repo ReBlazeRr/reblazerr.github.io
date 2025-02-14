@@ -466,11 +466,23 @@ main {
 .footer-title {
   font-size: 28px;
   font-weight: bold;
-  margin: 0 0 8px 0;
   background: linear-gradient(45deg, #999, #e5e5e5);
+  background-size: 200% auto;
+  animation: gradientFlow 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: -webkit-text-fill-color 0.3s ease;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .footer-info p {
