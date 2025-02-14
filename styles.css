@@ -42,13 +42,13 @@ header nav ul li {
     padding: 10px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.1s, box-shadow 0.1s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s, box-shadow 0.1s;   
 }
 
 /* Эффект при наведении */
 header nav ul li:hover {
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
