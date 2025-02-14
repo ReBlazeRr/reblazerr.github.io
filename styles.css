@@ -43,16 +43,13 @@ header {
   transition: margin-left 0.3s ease;
 }
 
-header nav {
-    margin-right: 400px; /* Начальный отступ справа */
-    transition: margin-right 0.3s ease; /* Плавное изменение отступа */
-}
-
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 0;
+  margin-right: 400px; /* Начальный отступ справа */
+  transition: margin-right 0.3s ease; /* Плавное изменение отступа */
 }
 
 nav ul li a {
