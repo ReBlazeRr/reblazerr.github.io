@@ -35,6 +35,43 @@ header {
   transition: padding 0.1s ease; /* Плавное изменение отступов */
 }
 
+/* Стили для элементов внутри header */
+header .logo,
+header nav ul li {
+    background: #0A1F44; /* Темно-синий фон */
+    padding: 10px 20px; /* Отступы внутри элементов */
+    border-radius: 20px; /* Закругленные углы */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Градиентная рамка для элементов */
+header .logo::before,
+header nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Закругленные углы */
+    padding: 3px; /* Толщина градиентной рамки */
+    background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+/* Эффект при наведении */
+header .logo:hover,
+header nav ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .logo {
   font-size: 24px;
   font-weight: bold;
