@@ -444,39 +444,54 @@ main {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 10%; /* отступы слева и справа для центрирования */
+}
+
+.footer-left {
+  display: flex;
   align-items: center;
-  padding: 20px 10%;
 }
 
 .footer-logo {
-  filter: grayscale(100%) brightness(150%);
-  background: linear-gradient(45deg, #999, #e5e5e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 80px; 
+  height: auto;
+  margin-right: 15px;
+}
+
+.footer-info {
+  text-align: left;
 }
 
 .footer-title {
   font-size: 28px;
   font-weight: bold;
-  background: linear-gradient(to right, #0077FF, #00AAFF);
+  margin: 0 0 8px 0;
+  background: linear-gradient(45deg, #999, #e5e5e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.footer-contact {
-  text-align: left;
+.footer-info p {
+  margin: 4px 0;
 }
 
-.footer-contact a {
-  display: block;
-  color: #00AAFF;
-  text-decoration: none;
+.footer-right {
+  text-align: right;
+}
+
+.footer-links a {
+  display: block; /* ссылки в столбец */
   font-weight: bold;
-  transition: color 0.3s ease;
+  background: linear-gradient(45deg, #00D4FF, #0077FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: -webkit-text-fill-color 0.3s ease;
+  margin-bottom: 5px;
 }
 
-.footer-contact a:hover {
-  color: white;
+.footer-links a:hover {
+  -webkit-text-fill-color: white;
 }
 
 .disclaimer {
@@ -485,4 +500,5 @@ main {
   font-size: 12px;
   margin-top: 10px;
 }
+
 
