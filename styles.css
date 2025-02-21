@@ -313,20 +313,21 @@ main {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 0 10px; /* Добавляем отступы по бокам для телефонов */
 }
 
 .founders-cards {
-    background: #0A1F44; /* Темно-синий */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 800px; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем карточку */
-    font-family: Verdana, sans-serif;
-    text-align: center; /* Выравниваем текст по центру */
-    box-sizing: border-box;
-    padding: 20px 20px 60px 20px; /* Добавляем отступ снизу */
-    border-radius: 20px; /* Закругляем углы контейнера */
-    position: relative;
-    overflow: hidden;
+  background: #0A1F44; /* Темно-синий */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px; /* Ограничиваем ширину */
+  margin: 0 auto; /* Центрируем карточку */
+  font-family: Verdana, sans-serif;
+  text-align: center; /* Выравниваем текст по центру */
+  box-sizing: border-box;
+  padding: 20px; /* Уменьшаем нижний отступ для телефонов */
+  border-radius: 20px; /* Закругляем углы контейнера */
+  position: relative;
+  overflow: hidden;
 }
 
 .founders-cards::before {
@@ -351,6 +352,7 @@ main {
   padding: 20px;
   border-radius: 20px; /* Закругляем углы карточек */
   width: 300px;
+  max-width: 100%; /* Устанавливаем максимальную ширину 100% для адаптивности */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #FFFFFF; /* Светлый текст */
@@ -418,6 +420,61 @@ main {
 .founder-description {
   font-size: 16px;
   color: #FFFFFF; /* Светлый текст */
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 768px) {
+  .founders-grid {
+    gap: 20px; /* Уменьшаем расстояние между карточками */
+    padding: 0 5px; /* Уменьшаем боковые отступы */
+  }
+
+  .founders-cards {
+    max-width: 100%; /* Растягиваем на всю ширину */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .founder {
+    width: 100%; /* Полная ширина карточки */
+    max-width: 320px; /* Ограничиваем максимальную ширину */
+    margin: 10px auto; /* Центрируем с меньшим отступом сверху */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .founder img {
+    width: 120px; /* Уменьшаем фото */
+    height: 120px;
+    margin-bottom: 15px; /* Уменьшаем отступ снизу */
+  }
+
+  .founder-name {
+    font-size: 20px; /* Уменьшаем шрифт имени */
+    animation: gradientFlow 6s ease infinite; /* Замедляем анимацию для компактности */
+  }
+
+  .founder-description {
+    font-size: 14px; /* Уменьшаем шрифт описания */
+    line-height: 1.4; /* Улучшаем читаемость */
+  }
+}
+
+@media (max-width: 480px) {
+  .founder {
+    max-width: 280px; /* Ещё меньше для совсем маленьких экранов */
+  }
+
+  .founder img {
+    width: 100px; /* Ещё меньше фото */
+    height: 100px;
+  }
+
+  .founder-name {
+    font-size: 18px; /* Ещё меньше шрифт */
+  }
+
+  .founder-description {
+    font-size: 12px; /* Минимальный читаемый размер */
+  }
 }
 
 /* Новая секция с глубоким синим фоном */
