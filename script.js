@@ -120,6 +120,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav ul');
   const header = document.querySelector('header');
 
+  const burger = document.createElement('div');
+  burger.className = 'burger';
+  burger.innerHTML = '<span></span><span></span><span></span>'; // Три линии для анимации
+  header.appendChild(burger);
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    burger.classList.toggle('open'); // Для анимации крестика
+  });
+});
+
   // Создаём бургер-кнопку
   const burger = document.createElement('div');
   burger.className = 'burger';
