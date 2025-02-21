@@ -696,8 +696,8 @@ main {
   .footer-logo {
     width: 60px; /* Уменьшаем логотип */
   }
- .footer-title {
-  font-size: 24px;
+  .footer-title {
+    font-size: 24px;
   }
   .footer-left,
   .footer-right {
