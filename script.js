@@ -22,7 +22,9 @@ if (buyButton) {
 
   buyButton.addEventListener("mouseenter", () => {
     if (!isHovering && buyButton.querySelector('span').textContent === "Купить токен") {
-      hoverOnBuyButtonSound.play();
+      hoverOnBuyButtonSound.play().catch(error => {
+        console.log("Ошибка воспроизведения звука:", error);
+      });
       isHovering = true;
       const span = buyButton.querySelector('span');
       if (span) {
