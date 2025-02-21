@@ -99,20 +99,12 @@ main {
 }
 
 .token-image {
-  width: 100%;
-  max-width: 400px; /* Ограничиваем максимальную ширину */
+  width: 400px;
   position: absolute;
-  top: 320px;
+  top: 320px; /* Настройка расстояния от верха страницы */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -2;
-}
-
-@media (max-width: 768px) {
-  .token-image {
-    top: 200px; /* Уменьшаем отступ сверху */
-    max-width: 250px; /* Уменьшаем размер на телефоне */
-  }
 }
 
 .slogan {
@@ -130,23 +122,18 @@ main {
 }
 
 .buy-button {
-  margin: 30px auto; /* Центрируем по горизонтали */
-  display: block; /* Делаем блочным элементом */
+  margin-top: 30px;
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #0A1F44;
-  background: linear-gradient(45deg, #1E5AFF, #00CFFF);
+  color: #0A1F44; /* Темно-синий текст */
+  background: linear-gradient(45deg, #1E5AFF, #00CFFF); /* Электрик-синий и неоновый голубой */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s, color 0.3s;
   position: relative;
   overflow: hidden;
-}
-
-.buy-button span {
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Указываем переход для span */
 }
 
 .buy-button::before {
@@ -177,13 +164,6 @@ main {
 
 .buy-button:hover span {
   opacity: 0;
-}
-
-@media (max-width: 768px) {
-  .buy-button {
-    padding: 10px 20px; /* Уменьшаем отступы */
-    font-size: 16px; /* Уменьшаем шрифт */
-  }
 }
 
 /* Секция "Наши Амбиции" */
@@ -427,61 +407,6 @@ main {
   color: #FFFFFF; /* Светлый текст */
 }
 
-/* Адаптивность для телефонов */
-@media (max-width: 768px) {
-  .founders-grid {
-    gap: 20px; /* Уменьшаем расстояние между карточками */
-    padding: 0 5px; /* Уменьшаем боковые отступы */
-  }
-
-  .founders-cards {
-    max-width: 100%; /* Растягиваем на всю ширину */
-    padding: 15px; /* Уменьшаем внутренние отступы */
-  }
-
-  .founder {
-    width: 100%; /* Полная ширина карточки */
-    max-width: 320px; /* Ограничиваем максимальную ширину */
-    margin: 10px auto; /* Центрируем с меньшим отступом сверху */
-    padding: 15px; /* Уменьшаем внутренние отступы */
-  }
-
-  .founder img {
-    width: 120px; /* Уменьшаем фото */
-    height: 120px;
-    margin-bottom: 15px; /* Уменьшаем отступ снизу */
-  }
-
-  .founder-name {
-    font-size: 20px; /* Уменьшаем шрифт имени */
-    animation: gradientFlow 6s ease infinite; /* Замедляем анимацию для компактности */
-  }
-
-  .founder-description {
-    font-size: 14px; /* Уменьшаем шрифт описания */
-    line-height: 1.4; /* Улучшаем читаемость */
-  }
-}
-
-@media (max-width: 480px) {
-  .founder {
-    max-width: 280px; /* Ещё меньше для совсем маленьких экранов */
-  }
-
-  .founder img {
-    width: 100px; /* Ещё меньше фото */
-    height: 100px;
-  }
-
-  .founder-name {
-    font-size: 18px; /* Ещё меньше шрифт */
-  }
-
-  .founder-description {
-    font-size: 12px; /* Минимальный читаемый размер */
-  }
-}
-
 /* Новая секция с глубоким синим фоном */
 .inspiration-section {
   background-color: #122B56; /* Глубокий синий */
@@ -553,74 +478,7 @@ main {
   margin-top: 10px;
 }
 
-/* Адаптивные стили */
-/* Стили для бургер-меню */
-.burger {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-  width: 40px;
-  height: 30px;
-  position: relative;
-}
 
-.burger span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #FFFFFF;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-  header {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-  }
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #081937;
-    padding: 20px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  }
-  nav ul.active {
-    display: flex;
-  }
-  nav ul li {
-    margin: 15px 0;
-    text-align: center;
-  }
-  nav ul li a {
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-  }
-  nav ul li a:hover {
-    background: #1E5AFF;
-    border-radius: 5px;
-  }
-}
-
-/* Анимация бургера в крестик */
-.burger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
-.burger.open span:nth-child(2) {
-  opacity: 0;
-}
-.burger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
 
 /* Наши контакты */
 .contact-footer {
@@ -737,4 +595,72 @@ main {
   .founder-description {
     font-size: 14px;
   }
+}
+
+/* Стили для бургер-меню */
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #081937;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+  nav ul li a:hover {
+    background: #1E5AFF;
+    border-radius: 5px;
+  }
+}
+
+/* Анимация бургера в крестик */
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
