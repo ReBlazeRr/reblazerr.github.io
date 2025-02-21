@@ -320,21 +320,20 @@ main {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 0 10px; /* Добавляем отступы по бокам для телефонов */
 }
 
 .founders-cards {
-  background: #0A1F44; /* Темно-синий */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  max-width: 800px; /* Ограничиваем ширину */
-  margin: 0 auto; /* Центрируем карточку */
-  font-family: Verdana, sans-serif;
-  text-align: center; /* Выравниваем текст по центру */
-  box-sizing: border-box;
-  padding: 20px; /* Уменьшаем нижний отступ для телефонов */
-  border-radius: 20px; /* Закругляем углы контейнера */
-  position: relative;
-  overflow: hidden;
+    background: #0A1F44; /* Темно-синий */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем карточку */
+    font-family: Verdana, sans-serif;
+    text-align: center; /* Выравниваем текст по центру */
+    box-sizing: border-box;
+    padding: 20px 20px 60px 20px; /* Добавляем отступ снизу */
+    border-radius: 20px; /* Закругляем углы контейнера */
+    position: relative;
+    overflow: hidden;
 }
 
 .founders-cards::before {
@@ -359,7 +358,6 @@ main {
   padding: 20px;
   border-radius: 20px; /* Закругляем углы карточек */
   width: 300px;
-  max-width: 100%; /* Устанавливаем максимальную ширину 100% для адаптивности */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   color: #FFFFFF; /* Светлый текст */
