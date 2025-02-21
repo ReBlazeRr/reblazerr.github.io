@@ -22,9 +22,7 @@ if (buyButton) {
 
   buyButton.addEventListener("mouseenter", () => {
     if (!isHovering && buyButton.querySelector('span').textContent === "Купить токен") {
-      hoverOnBuyButtonSound.play().catch(error => {
-        console.log("Ошибка воспроизведения звука:", error);
-      });
+      hoverOnBuyButtonSound.play();
       isHovering = true;
       const span = buyButton.querySelector('span');
       if (span) {
@@ -130,19 +128,4 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.toggle('open'); // Для анимации крестика
   });
 });
-
-  // Создаём бургер-кнопку
-  const burger = document.createElement('div');
-  burger.className = 'burger';
-  burger.innerHTML = '☰';
-  burger.style.cursor = 'pointer';
-  burger.style.fontSize = '24px';
-  burger.style.color = '#FFFFFF';
-  burger.style.padding = '10px';
-  header.appendChild(burger);
-
-  // Обработчик клика по бургеру
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
 });
