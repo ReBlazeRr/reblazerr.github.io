@@ -484,32 +484,72 @@ main {
 }
 
 /* Адаптивные стили */
+/* Стили для бургер-меню */
 .burger {
-    display: none;
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+  position: relative;
 }
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #FFFFFF;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
-    header {
-        position: relative;
-    }
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #081937;
-        padding: 10px 0;
-    }
-    nav ul.active {
-        display: flex;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
+  .burger {
+    display: block;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #081937;
+    padding: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+  nav ul li a:hover {
+    background: #1E5AFF;
+    border-radius: 5px;
+  }
+}
+
+/* Анимация бургера в крестик */
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Наши контакты */
