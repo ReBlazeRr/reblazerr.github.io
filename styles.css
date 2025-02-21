@@ -179,6 +179,13 @@ main {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+  .buy-button {
+    padding: 10px 20px; /* Уменьшаем отступы */
+    font-size: 16px; /* Уменьшаем шрифт */
+  }
+}
+
 /* Секция "Наши Амбиции" */
 .ambitions-section {
   padding: 50px 20px;
@@ -683,6 +690,20 @@ main {
   margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 60px; /* Уменьшаем логотип */
+  }
+  .footer-title {
+    font-size: 24px;
+  }
+}
+
 @keyframes gradientFlow {
   0% {
     background-position: 0% 50%;
@@ -692,5 +713,30 @@ main {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Общие улучшения для МАБИЛЫ */
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 20px;
+    margin-top: 300px; /* Корректируем отступ */
+  }
+  .description {
+    font-size: 14px;
+  }
+  .ambitions-section h2,
+  .founders-section h2,
+  .inspiration-section h2 {
+    font-size: 28px; /* Уменьшаем заголовки */
+  }
+  .card h3 {
+    font-size: 20px;
+  }
+  .founder-name {
+    font-size: 20px;
+  }
+  .founder-description {
+    font-size: 14px;
   }
 }
