@@ -99,12 +99,20 @@ main {
 }
 
 .token-image {
-  width: 400px;
+  width: 100%;
+  max-width: 400px; /* Ограничиваем максимальную ширину */
   position: absolute;
-  top: 320px; /* Настройка расстояния от верха страницы */
+  top: 320px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -2;
+}
+
+@media (max-width: 768px) {
+  .token-image {
+    top: 200px; /* Уменьшаем отступ сверху */
+    max-width: 250px; /* Уменьшаем размер на телефоне */
+  }
 }
 
 .slogan {
