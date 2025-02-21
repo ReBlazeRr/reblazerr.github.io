@@ -120,14 +120,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav ul');
   const header = document.querySelector('header');
 
+  // Создаём бургер-кнопку
   const burger = document.createElement('div');
   burger.className = 'burger';
-  burger.innerHTML = '<span></span><span></span><span></span>'; // Три линии для анимации
+  burger.innerHTML = '☰';
+  burger.style.cursor = 'pointer';
+  burger.style.fontSize = '24px';
+  burger.style.color = '#FFFFFF';
+  burger.style.padding = '10px';
   header.appendChild(burger);
 
+  // Обработчик клика по бургеру
   burger.addEventListener('click', () => {
     nav.classList.toggle('active');
-    burger.classList.toggle('open'); // Для анимации крестика
   });
-});
 });
