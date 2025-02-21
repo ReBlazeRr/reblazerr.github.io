@@ -122,18 +122,23 @@ main {
 }
 
 .buy-button {
-  margin-top: 30px;
+  margin: 30px auto; /* Центрируем по горизонтали */
+  display: block; /* Делаем блочным элементом */
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #0A1F44; /* Темно-синий текст */
-  background: linear-gradient(45deg, #1E5AFF, #00CFFF); /* Электрик-синий и неоновый голубой */
+  color: #0A1F44;
+  background: linear-gradient(45deg, #1E5AFF, #00CFFF);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s, color 0.3s;
   position: relative;
   overflow: hidden;
+}
+
+.buy-button span {
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Указываем переход для span */
 }
 
 .buy-button::before {
@@ -378,10 +383,28 @@ main {
 .founder-name {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF); /* Градиент */
+  background: linear-gradient(45deg, #00CFFF, #00B5D6, #00CFFF);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
-  color: transparent;
+  background-clip: text;
+  color: #00CFFF; /* Fallback для старых браузеров */
+  color: transparent; /* Для градиента */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Усиленная тень */
+  -webkit-text-stroke: 0.5px #000000; /* Тонкая обводка */
   margin-bottom: 10px;
+  animation: gradientFlow 4s ease infinite; /* Переливающийся градиент */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Плавный переход */
+}
+
+.founder-name:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), 0 0 5px rgba(0, 207, 255, 0.5); /* Свечение */
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .founder-description {
@@ -461,9 +484,31 @@ main {
 }
 
 /* Адаптивные стили */
+.burger {
+    display: none;
+}
 @media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
     header {
+        position: relative;
+    }
+    nav ul {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #081937;
+        padding: 10px 0;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
     }
 }
 
@@ -542,19 +587,5 @@ main {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-/* Responsive (для телефонов) */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .footer-left,
-  .footer-right {
-    margin-bottom: 15px;
   }
 }
